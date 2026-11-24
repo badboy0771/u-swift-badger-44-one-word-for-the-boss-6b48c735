@@ -3,23 +3,25 @@
 // the word against the bounty gate, writes it to /output/entry.txt, then
 // reads the file back to confirm the write landed.
 //
-// The word (v1): "Micromanager" — 12 characters. The honest first draft:
-// every office worker's default answer, the word anyone reaches for
-// before thinking. It is true — the boss who has to approve the font
-// size — but it is also the least fresh word in the contest: a comedy
-// editor who has read a thousand office jokes has read this one a
-// thousand times. It loses on criterion 4 (freshness) before the joke
-// even starts. Kept here as the baseline to beat, not the entry.
+// The word (v2): "Weathervane" — 11 characters. A step up from v1's
+// "Micromanager": it is fresh (nobody's default boss word), it is true
+// (the boss who agrees with whoever talked to him last, spinning to face
+// the newest wind in the room), and it travels (kitchen, warehouse,
+// office — every workplace has one). But it has a crack: on its own, in
+// a bare pairwise duel, it needs half a sentence of caption to land —
+// "he turns whichever way the wind blows" — and the judge's own brief
+// says a word that needs a caption is doing less than a word that stands
+// alone. A colleague at lunch would have to explain it before anyone
+// laughs. So v2 is a better word than v1 and still not the winner.
 //
-// Candidates weighed for v2: "Weathervane" (turns with the last wind),
-// "Thermostat" (sets the room's temperature), "Moodring" (the office
-// reads his colour before it reads the news), "Arsonist" (starts the
-// fires, then plays hero putting them out), "Fridayfive" (the 5pm Friday
-// assignment). The winner has to land with no caption at all.
+// v1 rejected: "Micromanager" — true, but the first word anyone reaches
+// for; zero surprise. v3 final (next): "Moodring" — the same weather
+// idea, but instant: everyone already knows what a mood ring does, and
+// the office reading the boss's colour before the news needs no gloss.
 
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 
-const ENTRY = "Micromanager";
+const ENTRY = "Weathervane";
 
 const MAX_CHARS = 30;
 
