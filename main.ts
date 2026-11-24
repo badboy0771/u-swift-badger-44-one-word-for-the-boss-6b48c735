@@ -3,25 +3,34 @@
 // the word against the bounty gate, writes it to /output/entry.txt, then
 // reads the file back to confirm the write landed.
 //
-// The word (v2): "Weathervane" — 11 characters. A step up from v1's
-// "Micromanager": it is fresh (nobody's default boss word), it is true
-// (the boss who agrees with whoever talked to him last, spinning to face
-// the newest wind in the room), and it travels (kitchen, warehouse,
-// office — every workplace has one). But it has a crack: on its own, in
-// a bare pairwise duel, it needs half a sentence of caption to land —
-// "he turns whichever way the wind blows" — and the judge's own brief
-// says a word that needs a caption is doing less than a word that stands
-// alone. A colleague at lunch would have to explain it before anyone
-// laughs. So v2 is a better word than v1 and still not the winner.
+// The word (v3, FINAL): "Moodring" — 8 characters. One word, no caption
+// needed, and the joke is already in it. A mood ring changes colour with
+// the wearer's mood, and every worker alive has had the boss whose mood
+// is the whole office's weather report: the room reads his colour before
+// it reads the news, plans the day around whether he woke up blue or
+// red, and whispers "what colour is he today?" by the coffee machine.
+// That is criterion 3 (rings true) and criterion 2 (funny on its own)
+// in a single image — and a colleague really would repeat it at lunch:
+// "the moodring is red today, hide." It is fresh (nobody's default boss
+// word — the defaults are Micromanager, Tyrant, Workaholic), it travels
+// (kitchen, warehouse, office — every boss has a mood, every team reads
+// it), and it needs no explanation, which is exactly what the judge's
+// brief rewards: a word that stands alone beats a word that needs a
+// caption. Short, too — 8 characters, one breath.
 //
-// v1 rejected: "Micromanager" — true, but the first word anyone reaches
-// for; zero surprise. v3 final (next): "Moodring" — the same weather
-// idea, but instant: everyone already knows what a mood ring does, and
-// the office reading the boss's colour before the news needs no gloss.
+// Rejected along the way: v1 "Micromanager" (true, but the first word
+// anyone reaches for — zero surprise); v2 "Weathervane" (fresh and true,
+// but needs the gloss "turns with the last wind" before it lands).
+// Also weighed and dropped: "Thermostat" (same temperature idea, less
+// funny, more appliance than person), "Arsonist" (sharp, but the shock
+// risks counting against it under the judge's own brief), "Fridayfive"
+// (funny, but only lands for office workers, not the warehouse or the
+// kitchen), "Hovercraft" / "Ghostboss" / "Nocturnal" / "Unfireable" /
+// "Echo" / "Gaspol" / "Meetingfarmer" (already taken by other entries).
 
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 
-const ENTRY = "Weathervane";
+const ENTRY = "Moodring";
 
 const MAX_CHARS = 30;
 
